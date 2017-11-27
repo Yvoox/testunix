@@ -10,12 +10,8 @@ Installation guide on RASPBIAN OS
 	- Disable Access Control
 	- Disable connectivity check
 	- Just next until finish and Reload
-	- Go into Octoprint Settings - API - and Allow Cross Oringin ressource Sharing
-7. Clic on launch.sh for start octoprint server API and the webinterface
-8. F10 into firefox will give you a full size screen
-
-FAQ:
-
-- Lors du lancement du navigateur web sur l'url 127.0.0.1, une erreur 403 et FORBIDEN ACCESS apparait OU une erreur de copie s'est produite après 
-  "Now we'll set the 3DNOV interface"
-	-ouvrir un terminal et lancer sudo chown -R $USER /var/www  et sudo cmod 777 /var/www
+	- Go into Octoprint Settings - API - and Allow Cross Oringin ressource Sharin
+7. Copy this APi key : D337D723E2684C0989708BD216F0C6F0  and replace ~/.octoprint/config.yaml  -> api : key with
+	If the folder .octoprint isn't visible into home folder : right click -> show hidden 
+8. Clic on launch.sh for start octoprint server API and the webinterface
+9. F10 into firefox will give you a full size screen

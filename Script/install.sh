@@ -42,6 +42,9 @@ cp launch.sh ~/Desktop
 cd ..
 cp -r ./html/* /var/www/html
 
+#XTERM INSTALL FOR LAUNCHER
+sudo apt -y install xterm
+
 
 #OCTOPRINT SERVER INSTALL
 echo "Let's install octoprint and configure it"
