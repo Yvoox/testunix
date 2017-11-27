@@ -29,6 +29,8 @@ sudo apt -y install iceweasel
 #cat ./verif_apache.html #MUST WRITE "it works !"
 
 #PHP TEST
+sudo chown -R $USER /var/www
+sudo cmod 777 /var/www
 sudo rm /var/www/html/index.html
 #echo "<?php phpinfo(); ?>" > /var/www/html/index.php
 #firefox "http://127.0.0.1/index.php"
@@ -36,28 +38,9 @@ sudo rm /var/www/html/index.html
 
 #COPY 3DNOV TEMPLATE INTO /var/www/html
 echo "Now we'll set the 3DNOV interface"
+cp launch.sh ~/Desktop
 cd ..
-cd html 
-cp config_imp.php ~/var/www/html
-cp control.php ~/var/www/html
-cp firmware.php ~/var/www/html
-cp header.php ~/var/www/html
-cp index.php ~/var/www/html
-cp machine.php ~/var/www/html
-cp machine_name.php ~/var/www/html
-cp modele.php ~/var/www/html
-cp n_serie.php ~/var/www/html
-cp print.php ~/var/www/html
-cp README.md ~/var/www/html
-cp search_file.php ~/var/www/html
-cp start_gcode.php ~/var/www/html
-cp start_imp.php ~/var/www/html
-cp start_stl.php ~/var/www/html
-cp version.php ~/var/www/html
-mkdir -p ~/var/www/html/css
-mkdir -p ~/var/www/html/img
-mkdir -p ~/var/www/html/js
-mkdir -p ~/var/www/html/traitement
+cp -r /html/* ~/var/www/html/
 
 
 #OCTOPRINT SERVER INSTALL
