@@ -11,8 +11,8 @@ sudo apt -y upgrade
 #APACHE SERVER INSTALL AND CONF
 echo "APACHE SERVER installation and configuration"
 sudo apt -y install apache2
-sudo chown -R pi:www-data /var/www/html/
-sudo chmod -R 770 /var/www/html
+# /home/test/var/www/html
+
 
 #PHP SERVER INSTALL
 echo "PHP SERVER installation and configuration"
@@ -30,7 +30,7 @@ sudo apt -y install iceweasel
 
 #PHP TEST
 sudo chown -R $USER /var/www
-sudo cmod 777 /var/www
+sudo chmod 777 /var/www
 sudo rm /var/www/html/index.html
 #echo "<?php phpinfo(); ?>" > /var/www/html/index.php
 #firefox "http://127.0.0.1/index.php"
