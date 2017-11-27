@@ -40,7 +40,7 @@ sudo rm /var/www/html/index.html
 echo "Now we'll set the 3DNOV interface"
 cp launch.sh ~/Desktop
 cd ..
-cp -r /html/* ~/var/www/html/
+cp -r ./html/* ~/var/www/html
 
 
 #OCTOPRINT SERVER INSTALL
