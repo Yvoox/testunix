@@ -59,4 +59,7 @@ echo "Enable access to serial port"
 sudo usermod -a -G tty pi
 sudo usermod -a -G dialout pi
 
+cd ~/Desktop
+chmod +x launch.sh
+
 echo "Installation and configuration done !"
